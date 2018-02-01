@@ -19,7 +19,7 @@ $ ./step1.py <br />
 
 The output is "WING18". <br />
 
-# step2.cpp
+# step2.cpp (Server)
 
 step2.cpp is a C++/BoostAsio server that takes two command-line options:  <br />
 1- The port to which it has to listen <br />
@@ -51,7 +51,7 @@ and writing 10:10:0-10:11:20 and pressing Enter. <br />
 Details: <br />
 The server is iterative and syncronous, that is, it can not accept more than one connection by time.  <br />
 
-# step3.cpp step3.hpp <br />
+# step3.cpp step3.hpp main.cpp (Client) <br />
 
 step3.cpp/step3.hpp is a library to facilitate the communication with the server. <br />
 It is very simple to use.  <br />
@@ -71,5 +71,7 @@ Example: <br />
     // And cleaning the internal vector<char>
     c.clear();
     
-The main.cpp has a similar example of use. <br />
-    
+The main.cpp has a similar example of use and can be used as follow: <br />
+$ CC step3.cpp main.cpp -O3 -std=c++14 -lboost_system -lpthread -L/usr/local/lib -I/usr/local/include -o client <br />
+$ ./client 192.168.0.101 100 <br />
+(assuming IP= 192.168.0.101 and Port=100) <br />
