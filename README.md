@@ -1,11 +1,11 @@
 # server_testing
 
-File dependencies:
+File dependencies: <br />
 ftp://ftp.bmf.com.br/MarketData/BMF/OFER_CPA_BMF_20180126.zip <br />
 ftp://ftp.bmf.com.br/MarketData/BMF/OFER_CPA_BMF_20180126.zip <br />
 
 Library dependency: <br />
-Boost Asio <br />
+Boost Asio 1.66.0 <br />
 
 # step1.py
 
