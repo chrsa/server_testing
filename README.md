@@ -36,7 +36,7 @@ You must wait for "Ready." before connect to server. <br />
 
 The protocol is: <br />
 HH:MM:SS-HH:MM:SS\n <br />
-where \n means "new line" instead literal '\' and 'n'  <br />
+where \n means "new line" instead literal \ and 'n'  <br />
 and HH=hour,MM=minute,SS=second <br />
 Example <br />
 10:10:0-10:11:20 <br />
